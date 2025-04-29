@@ -11,7 +11,9 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    bat 'set DOCKER_BUILDKIT=0 && docker build -t devops-node-app:latest .'
+                   // bat 'set DOCKER_BUILDKIT=0 && docker build -t devops-node-app:latest .'
+                    bat 'set "DOCKER_BUILDKIT=0" && docker build -t devops-node-app:latest .'
+
                 }
             }
         }
