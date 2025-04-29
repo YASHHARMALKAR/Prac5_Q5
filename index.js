@@ -29,7 +29,7 @@ app.get('/home', (req, res) => {
 });
 
 // Start server
-server.listen(8082, () => {
+server.listen(4000, () => {
     console.log("Server is running on port 8082");
 
     // Stop server after 120 seconds
